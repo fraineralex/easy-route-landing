@@ -1,0 +1,69 @@
+import React from "react";
+import styled from "styled-components";
+// Components
+import FullButton from "../Buttons/FullButton";
+// Assets
+import basicIcon from "../../assets/img/basic.png";
+import intermediateIcon from "../../assets/img/intermediate.png";
+import PremiumIcon from "../../assets/img/premium.png";
+import CheckMark from "../../assets/svg/Checkmark";
+
+export default function PricingTable({ icon, price, title, text,  offers, action }) {
+  let getIcon;
+
+  switch (icon) {
+    case "basic":
+      getIcon = <img src={basicIcon} alt="basic" />;
+      break;
+    case "intermediate":
+      getIcon = <img src={intermediateIcon} alt="intermediate" />;
+      break;
+    case "premium":
+      getIcon = <img src={PremiumIcon} alt="basic" />;
+      break;
+    default:
+      getIcon = <img src={basicIcon} alt="basic" />;
+      break;
+  }
+
+  return (
+    <Wrapper className="whiteBg radius8 shadow">
+      <div className="flexSpaceCenter">
+        {getIcon}
+        <p className="font30 extraBold">{price}</p>
+      </div>
+      <div style={{ margin: "30px 0" }}>
+        <h4 className="font30 extraBold">{title}</h4>
+        <p className="font13">{text}</p>
+      </div>
+      <div>
+        {offers
+          ? offers.map((item, index) => (
+              <div className="flexNullCenter" style={{ margin: "15px 0" }} key={index}>
+                <div style={{ position: "relative", top: "-1px", marginRight: "15px" }}>
+                  {item.cheked ? (
+                    <div style={{ minWidth: "20px" }}>
+                      <CheckMark />
+                    </div>
+                  ) : (
+                    <div style={{ minWidth: "20px" }}></div>
+                  )}
+                </div>
+                <p className="font13 extraBold">{item.name}</p>
+              </div>
+            ))
+          : null}
+      </div>
+      <div style={{ maxWidth: "120px", margin: "30px auto 0 auto" }}>
+        <FullButton title="Comprar" action={action} />
+      </div>
+    </Wrapper>
+  );
+}
+
+const Wrapper = styled.div`
+  width: 100%;
+  text-align: left;
+  padding: 20px 30px;
+  margin-top: 30px;
+`;
