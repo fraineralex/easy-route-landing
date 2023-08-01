@@ -12,12 +12,9 @@ export default function Header() {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">Somos Software Financiero.</h1>
+          <h1 className="extraBold font60">Brindamos Soluciones de Software.</h1>
           <HeaderP className="font13">
-            Somos una agencia de software financiero comprometida en revolucionar la industria
-             de las empresas de rutas de préstamos. Nuestra misión es ofrecer soluciones modernas
-              y eficientes que superen los desafíos actuales, optimicen el proceso de préstamos
-              y mejoren la toma de decisiones en el sector financiero. 
+          En OdooTech, nos dedicamos a brindar soluciones integrales de software para potenciar el crecimiento y la eficiencia de tu negocio. Somos un equipo de profesionales apasionados por la tecnología y la innovación, comprometidos con ofrecer servicios de alta calidad y resultados excepcionales.
           </HeaderP>
           <BtnWrapper>
             <FullButton title="Comenzar" />

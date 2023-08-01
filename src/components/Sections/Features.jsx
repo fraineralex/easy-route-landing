@@ -15,11 +15,11 @@ export default function features() {
       <div className="whiteBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Algunas Funcionalidades de Nuestro Software</h1>
+            <h1 className="font40 extraBold">Algunas Funcionalidades que Ofrecemos</h1>
             <p className="font13">
-              A continuación te mostraremos algunas de las funcionalidades más interesantes de nuestro
+              A continuación te mostraremos algunas de las funcionalidades más interesantes de nuestra
               <br />
-              software de ruta de prestamos.
+              consultora de Odoo.
             </p>
           </HeaderInfo>
           <div className="row textCenter">
@@ -29,31 +29,28 @@ export default function features() {
                 title="Análisis de datos"
                 text="Te brindaremos un dashboard donde se resumen todas las métricas importantes de tu empresa
                  con sus respectivos filtros para que puedas enterarte de todo con un solo vistazo."
-                action={() => alert("clicked")}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <FeatureBox
                 img={FeatureImg2}
                 title="Eventos del día"
-                text="Tendrás un tablero donde se indicará cuales son las rutas del día, que zonas se visitarás,
-                a cuales clientes se le realizará el cobro y otras métricas respecto a los detalles del día."
-                action={() => alert("clicked")}
+                text="Tendrás un tablero donde se indicará cuales son los eventos del día, cuales son la tareas del equipo,
+                 cuales son los eventos importantes, etc."
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <FeatureBox
                 img={FeatureImg3}
-                title="Gestión de prestamos"
-                text="Habrá un apartado donde se podrá visualizar todos los prestamos activos o inactivos, permitiendo realizar
-                 una serie de filtros para facilitar la el monitoreo y acceso de los mismos."
-                action={() => alert("clicked")}
+                title="Gestión de nomina"
+                text="Habrá un apartado donde se podrá visualizar la gestión de nomina de los empleados,
+                  con sus respectivos pagos, descuentos, etc."
               />
             </div>
           </div>
           <div className="row flexCenter">
             <div style={{ margin: "50px 0", width: "200px" }}>
-              <FullButton title="Cargar más" action={() => alert("clicked")} />
+              <FullButton title="Cargar más" />
             </div>
           </div>
         </div>
@@ -77,10 +74,10 @@ export default function features() {
               </p>
               <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>
                 <div style={{ width: "190px" }}>
-                  <FullButton title="Comenzar" action={() => alert("clicked")} />
+                  <FullButton title="Comenzar" />
                 </div>
                 <div style={{ width: "190px", marginLeft: "15px" }}>
-                  <FullButton title="Contáctanos" action={() => alert("clicked")} border />
+                  <FullButton title="Contáctanos" border />
                 </div>
               </ButtonsRow>
             </AddRight>

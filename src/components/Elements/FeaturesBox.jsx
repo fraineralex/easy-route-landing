@@ -24,7 +24,7 @@ const Wrapper = styled.div`
   h3 {
     padding-bottom: 10px;
   }
-`;
+  `;
 const ImgBtn = styled.button`
   background-color: transparent;
   border: 0px;

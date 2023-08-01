@@ -29,7 +29,7 @@ export default function TopNavbar() {
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <img src={LogoIcon} alt="logo"/>
             <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
-              EasyRoute
+              OdooTech
             </h1>
           </Link>
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>

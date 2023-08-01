@@ -44,4 +44,4 @@ const LogoWrapper = styled.div`
     outline: none;
     border: 0px;
   }
-`;
+  `;

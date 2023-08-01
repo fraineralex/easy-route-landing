@@ -86,7 +86,7 @@ const LogoWrapper = styled.div`
     outline: none;
     border: 0px;
   }
-`;
+  `;
 const ImgStyle = styled.img`
   width: 100%;
   height: 100%;

@@ -13,4 +13,4 @@ const Wrapper = styled.div`
   left: 0;
   z-index: 99;
   opacity: 0.8;
-`;
+  `;

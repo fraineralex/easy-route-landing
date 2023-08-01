@@ -32,7 +32,6 @@ export default function Pricing() {
                   { name: "Herramientas de informes y análisis", cheked: false },
                   { name: "Integración con otros sistemas", cheked: false },
                 ]}
-                action={() => alert("clicked")}
               />
             </TableBox>
             <TableBox>
@@ -50,7 +49,6 @@ export default function Pricing() {
                   { name: "8 vCores, 12 GB RAM, 500 GB (SDD)", cheked: true },
                   { name: "Automatización de procesos", cheked: false }
                 ]}
-                action={() => alert("clicked")}
               />
             </TableBox>
             <TableBox>
@@ -68,7 +66,6 @@ export default function Pricing() {
                   { name: "Base de datos: Ilimitada", cheked: true },
                   { name: "32 vCores, 32 GB RAM, 2 TB (NVMe)", cheked: true },
                 ]}
-                action={() => alert("clicked")}
               />
             </TableBox>
           </TablesWrapper>

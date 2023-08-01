@@ -18,11 +18,11 @@ export default function Contact() {
             <Link className="flexCenter animate pointer" to="home" smooth={true} offset={-80}>
               <img src={LogoIcon} alt="logo" />
               <h1 className="font15 extraBold whiteColor" style={{ marginLeft: "15px" }}>
-                EasyRoute
+                OdooTech
               </h1>
             </Link>
             <StyleP className="whiteColor font13">
-              © {getCurrentYear()} - <span className="purpleColor font13">EasyRoute</span> Todos los derechos reservados.
+              © {getCurrentYear()} - <span className="purpleColor font13">OdooTech</span> Todos los derechos reservados.
             </StyleP>
 
             <Link className="whiteColor animate pointer font13" to="home" smooth={true} offset={-80}>
