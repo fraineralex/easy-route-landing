@@ -9,6 +9,7 @@ import AddImage1 from "../../assets/img/innovation.jpg";
 import AddImage2 from "../../assets/img/modern.jpg";
 import AddImage3 from "../../assets/img/security.jpg";
 import AddImage4 from "../../assets/img/computer.png";
+import  { Link } from "react-scroll";
 
 export default function Services() {
   return (
@@ -20,7 +21,7 @@ export default function Services() {
             <p className="font13">
               Descubre nuestros servicios de calidad que te brindan soluciones eficientes y personalizadas que
               <br />
-               te ayudarán a llevar tu empresa al siguiente nivel mediante nuestra implementación de Odoo.
+               te ayudarán a llevar tu ruta de prestamos al siguiente nivel.
             </p>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
@@ -28,7 +29,7 @@ export default function Services() {
               <ServiceBox
                 icon="roller"
                 title="Implementación"
-                subtitle="Brindamos servicios de implementación de Odoo Software para empresas de todos los tamaños."
+                subtitle="Brindamos servicios de implementación de nuestro software para empresas de rutas de préstamos."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
@@ -48,7 +49,7 @@ export default function Services() {
               <ServiceBox
                 icon="browser"
                 title="Funcionalidades Extras"
-                subtitle="Personalizamos y ampliamos tu implementación para satisfacer necesidades específicas."
+                subtitle="Personalizamos y ampliamos nuestra plataforma para satisfacer necesidades específicas."
               />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
@@ -57,7 +58,7 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">OdooTech está constantemente</h4>
+                <h4 className="font15 semiBold">EasyRoute está constantemente</h4>
                 <h2 className="font40 extraBold">En busca de la Innovación</h2>
                 <p className="font12">
                   Utilizando tecnologías de última generación, garantizamos un rendimiento óptimo, 
@@ -67,12 +68,16 @@ export default function Services() {
                    éxito de nuestros clientes.
                 </p>
                 <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
-                  <div style={{ width: "190px" }}>
-                    <FullButton title="Comienzar" />
-                  </div>
-                  <div style={{ width: "190px", marginLeft: "15px" }}>
-                    <FullButton title="Contactanos" border />
-                  </div>
+                <div style={{ width: "190px" }}>
+                  <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-80}>
+                    <FullButton title="Comenzar" to="services" />
+                  </Link>
+                </div>
+                <div style={{ width: "190px", marginLeft: "15px" }}>
+                  <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-80}>
+                    <FullButton title="Contáctanos" to="services" border />
+                  </Link>
+                </div>
                 </ButtonsRow>
               </AddLeft>
               <AddRight>

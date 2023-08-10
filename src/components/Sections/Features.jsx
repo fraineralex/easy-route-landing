@@ -8,6 +8,7 @@ import FeatureImg1 from "../../assets/img/dashboard.jpg";
 import FeatureImg2 from "../../assets/img/routes.jpg";
 import FeatureImg3 from "../../assets/img/loan.jpg";
 import AddImage2 from "../../assets/img/cloud.jpg";
+import { Link } from "react-scroll";
 
 export default function features() {
   return (
@@ -15,11 +16,14 @@ export default function features() {
       <div className="whiteBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Algunas Funcionalidades que Ofrecemos</h1>
+            <h1 className="font40 extraBold">
+              Algunas Funcionalidades de Nuestro Software
+            </h1>
             <p className="font13">
-              A continuación te mostraremos algunas de las funcionalidades más interesantes de nuestra
+              A continuación te mostraremos algunas de las funcionalidades más
+              interesantes de nuestro
               <br />
-              consultora de Odoo.
+              software de ruta de prestamos.
             </p>
           </HeaderInfo>
           <div className="row textCenter">
@@ -35,16 +39,16 @@ export default function features() {
               <FeatureBox
                 img={FeatureImg2}
                 title="Eventos del día"
-                text="Tendrás un tablero donde se indicará cuales son los eventos del día, cuales son la tareas del equipo,
-                 cuales son los eventos importantes, etc."
+                text="Tendrás un tablero donde se indicará cuales son las rutas del día, que zonas se visitarás,
+                a cuales clientes se le realizará el cobro y otras métricas respecto a los detalles del día."
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <FeatureBox
                 img={FeatureImg3}
-                title="Gestión de nomina"
-                text="Habrá un apartado donde se podrá visualizar la gestión de nomina de los empleados,
-                  con sus respectivos pagos, descuentos, etc."
+                title="Gestión de prestamos"
+                text="Habrá un apartado donde se podrá visualizar todos los prestamos activos o inactivos, permitiendo realizar
+                 una serie de filtros para facilitar la el monitoreo y acceso de los mismos."
               />
             </div>
           </div>
@@ -66,18 +70,44 @@ export default function features() {
               </AddLeftInner>
             </AddLeft>
             <AddRight>
-              <h4 className="font15 semiBold">Asociándote con nosotros pondrás</h4>
-              <h2 className="font30 extraBold">Mantener tus datos en la nube</h2>
+              <h4 className="font15 semiBold">
+                Asociándote con nosotros pondrás
+              </h4>
+              <h2 className="font30 extraBold">
+                Mantener tus datos en la nube
+              </h2>
               <p className="font12">
-                Nosotros nos encargaremos de almacenar tu información en una base de datos en la nube
-                 con tecnología y seguridad de vanguardia para garantizar nuestro compromiso.
+                Nosotros nos encargaremos de almacenar tu información en una
+                base de datos en la nube con tecnología y seguridad de
+                vanguardia para garantizar nuestro compromiso.
               </p>
-              <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>
+              <ButtonsRow
+                className="flexNullCenter"
+                style={{ margin: "30px 0" }}
+              >
                 <div style={{ width: "190px" }}>
-                  <FullButton title="Comenzar" />
+                  <Link
+                    activeClass="active"
+                    style={{ padding: "10px 15px" }}
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                  >
+                    <FullButton title="Comenzar" to="services" />
+                  </Link>
                 </div>
                 <div style={{ width: "190px", marginLeft: "15px" }}>
-                  <FullButton title="Contáctanos" border />
+                  <Link
+                    activeClass="active"
+                    style={{ padding: "10px 15px" }}
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                  >
+                    <FullButton title="Contáctanos" to="services" border />
+                  </Link>
                 </div>
               </ButtonsRow>
             </AddRight>

@@ -11,9 +11,9 @@ export default function we() {
       <div className="whiteBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">¿Por qué OdooTech?</h1>
+            <h1 className="font40 extraBold">¿Por qué EasyRoute?</h1>
             <p className="font13">
-              En OdooTech, nos enorgullece ofrecer soluciones de vanguardia en la implementación y personalización de Odoo.
+              En EasyRoute, nos enorgullece ofrecer soluciones de vanguardia en la gestión de rutas de préstamos.
               <br />
                Nuestra empresa se destaca por su compromiso con la excelencia y la satisfacción del cliente.
             </p>
@@ -22,7 +22,7 @@ export default function we() {
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <WeBox
                 title="ENFOCADOS EN TU ÉXITO"
-                text="Nuestra pasión es impulsar el éxito de nuestros clientes. A pesar de ser una empresa nueva, nos comprometemos a brindarte soluciones innovadoras para potenciar tu triunfo en el sector."
+                text="Nuestra pasión es impulsar el éxito de las empresas de rutas de préstamos. A pesar de ser una empresa nueva, nos comprometemos a brindarte soluciones innovadoras para potenciar tu triunfo en el sector."
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -42,7 +42,7 @@ export default function we() {
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <WeBox
                 title="ENFOQUE EN LA CALIDAD"
-                text="La calidad es uno de nuestros pilares fundamentales en OdooTech. Nos esforzamos por ofrecerte soluciones de software de alta calidad que superen tus expectativas y necesidades."
+                text="La calidad es uno de nuestros pilares fundamentales en EasyRoute. Nos esforzamos por ofrecerte soluciones de software de alta calidad que superen tus expectativas y necesidades."
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">

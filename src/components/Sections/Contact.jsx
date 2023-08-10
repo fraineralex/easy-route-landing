@@ -13,25 +13,56 @@ export default function Contact() {
           <HeaderInfo>
             <h1 className="font40 extraBold">Contáctanos</h1>
             <p className="font13">
-              Escríbenos y resolveremos cualquier duda o inquietud para que comencemos 
-              <br />
-              a trabajar lo antes posible.
+              Escríbenos y resolveremos cualquier duda o inquietud para que
+              comencemos
+              <br />a trabajar lo antes posible.
             </p>
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <Form>
+              <Form
+                id="form"
+                action="mailto:frainerdeveloper@gmail.com"
+                method="GET"
+              >
                 <label className="font13">Nombre:</label>
-                <input type="text" id="fname" name="fname" className="font20 extraBold" />
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  className="font20 extraBold input"
+                />
                 <label className="font13">Correo:</label>
-                <input type="text" id="email" name="email" className="font20 extraBold" />
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  className="font20 extraBold input"
+                />
                 <label className="font13">Cuestión:</label>
-                <input type="text" id="subject" name="subject" className="font20 extraBold" />
-                <textarea rows="4" cols="50" type="text" id="message" name="message" className="font20 extraBold" />
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  className="font20 extraBold input"
+                />
+                <textarea
+                  rows="4"
+                  cols="50"
+                  type="text"
+                  id="message"
+                  name="message"
+                  className="font20 extraBold"
+                />
+                <SumbitWrapper className="flex">
+                  <ButtonInput
+                    type="submit"
+                    value="Enviar mensaje"
+                    className="pointer animate radius8"
+                    style={{ maxWidth: "220px" }}
+                  />
+                </SumbitWrapper>
               </Form>
-              <SumbitWrapper className="flex">
-                <ButtonInput type="submit" value="Enviar mensaje" className="pointer animate radius8" style={{ maxWidth: "220px" }} />
-              </SumbitWrapper>
             </div>
           </div>
         </div>
@@ -51,7 +82,7 @@ const HeaderInfo = styled.div`
 `;
 const Form = styled.form`
   padding: 70px 0 30px 0;
-  input,
+  .input,
   textarea {
     width: 100%;
     background-color: transparent;
@@ -86,8 +117,8 @@ const ButtonInput = styled.input`
   }
 `;
 const ContactImgBox = styled.div`
-  max-width: 180px; 
-  align-self: flex-end; 
+  max-width: 180px;
+  align-self: flex-end;
   margin: 10px 30px 10px 0;
 `;
 const SumbitWrapper = styled.div`
@@ -96,12 +127,3 @@ const SumbitWrapper = styled.div`
     margin-bottom: 50px;
   }
 `;
-
-
-
-
-
-
-
-
-

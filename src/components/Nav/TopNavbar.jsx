@@ -29,7 +29,7 @@ export default function TopNavbar() {
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <img src={LogoIcon} alt="logo"/>
             <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
-              OdooTech
+              EasyRoute
             </h1>
           </Link>
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
@@ -68,7 +68,7 @@ export default function TopNavbar() {
             </li>
           </UlWrapper>
           <UlWrapperRight className="flexNullCenter">
-            <li className="semiBold font15 pointer">
+            {/* <li className="semiBold font15 pointer">
               <a href="/" style={{ padding: "10px 30px 10px 0" }}>
                 Iniciar sesión
               </a>
@@ -77,7 +77,7 @@ export default function TopNavbar() {
               <a href="/" className="radius8 lightBg" style={{ padding: "10px 15px" }}>
                 Comenzar
               </a>
-            </li>
+            </li> */}
           </UlWrapperRight>
         </NavInner>
       </Wrapper>

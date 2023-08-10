@@ -6,18 +6,24 @@ import FullButton from "../Buttons/FullButton";
 import HeaderImage from "../../assets/img/header2.jpg";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
+import { Link } from "react-scroll";
 
 export default function Header() {
   return (
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">Brindamos Soluciones de Software.</h1>
+          <h1 className="extraBold font60">Somos Software Financiero.</h1>
           <HeaderP className="font13">
-          En OdooTech, nos dedicamos a brindar soluciones integrales de software para potenciar el crecimiento y la eficiencia de tu negocio. Somos un equipo de profesionales apasionados por la tecnología y la innovación, comprometidos con ofrecer servicios de alta calidad y resultados excepcionales.
+            Somos una agencia de software financiero comprometida en revolucionar la industria
+             de las empresas de rutas de préstamos. Nuestra misión es ofrecer soluciones modernas
+              y eficientes que superen los desafíos actuales, optimicen el proceso de préstamos
+              y mejoren la toma de decisiones en el sector financiero. 
           </HeaderP>
           <BtnWrapper>
-            <FullButton title="Comenzar" />
+            <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-80}>
+              <FullButton title="Comenzar" to="services" />
+            </Link>
           </BtnWrapper>
         </div>
       </LeftSide>

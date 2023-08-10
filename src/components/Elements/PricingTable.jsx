@@ -7,8 +7,16 @@ import basicIcon from "../../assets/img/basic.png";
 import intermediateIcon from "../../assets/img/intermediate.png";
 import PremiumIcon from "../../assets/img/premium.png";
 import CheckMark from "../../assets/svg/Checkmark";
+import { Link } from "react-scroll";
 
-export default function PricingTable({ icon, price, title, text,  offers, action }) {
+export default function PricingTable({
+  icon,
+  price,
+  title,
+  text,
+  offers,
+  action,
+}) {
   let getIcon;
 
   switch (icon) {
@@ -39,8 +47,18 @@ export default function PricingTable({ icon, price, title, text,  offers, action
       <div>
         {offers
           ? offers.map((item, index) => (
-              <div className="flexNullCenter" style={{ margin: "15px 0" }} key={index}>
-                <div style={{ position: "relative", top: "-1px", marginRight: "15px" }}>
+              <div
+                className="flexNullCenter"
+                style={{ margin: "15px 0" }}
+                key={index}
+              >
+                <div
+                  style={{
+                    position: "relative",
+                    top: "-1px",
+                    marginRight: "15px",
+                  }}
+                >
                   {item.cheked ? (
                     <div style={{ minWidth: "20px" }}>
                       <CheckMark />
@@ -55,7 +73,15 @@ export default function PricingTable({ icon, price, title, text,  offers, action
           : null}
       </div>
       <div style={{ maxWidth: "120px", margin: "30px auto 0 auto" }}>
-        <FullButton title="Comprar" action={action} />
+        <Link
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-80}
+        >
+          <FullButton title="Comprar" />
+        </Link>
       </div>
     </Wrapper>
   );
